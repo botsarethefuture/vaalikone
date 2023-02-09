@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block main %}
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+#ElectionForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+h1 {
+  text-align: center;  
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+</style>
+<body>
+
+<form id="ElectionForm" action="/">
+  <!-- One "tab" for each step in the form: -->
+  {% for question in questions %}
+  <div class="tab">{{question.Title}}:
+    <div class="range">
+      <input type="range" min="1" max="5" steps="1" value="3">
+    </div>
+    
+    <ul class="range-labels">
+      <li>{% trans "Totally disagree" %}</li>
+      <li>{% trans "Disagree" %}</li>
+      <li class="active selected">{% trans "neither agree nor disagree" %}</li>
+      <li>{% trans "Agree" %}</li>
+      <li>{% trans "Totally agree" %}</li>
+    </ul>
+  </div>
+  
+  {% endfor %}
+</form>
+
+</body>
+</html>
