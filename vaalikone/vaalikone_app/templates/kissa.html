@@ -1,0 +1,665 @@
+<script src="https://skyhood-duunitori5.s3.amazonaws.com/static/web/js/cookie-853d020db1.js"></script>
+<link rel="stylesheet" href="https://skyhood-duunitori5.s3.amazonaws.com/static/css/jquery-ui.min.css" media="none"
+    onload="if(this.media!='all')this.media='all';this.onload=null">
+<noscript>
+    <link rel="stylesheet" href="https://skyhood-duunitori5.s3.amazonaws.com/static/css/jquery-ui.min.css">
+</noscript>
+<link rel="stylesheet" href="https://skyhood-duunitori5.s3.amazonaws.com/static/web/css/main-297d6a4ae3.css"
+    media="none" onload="if(this.media!='all')this.media='all';this.onload=null">
+<noscript>
+    <link rel="stylesheet" href="https://skyhood-duunitori5.s3.amazonaws.com/static/web/css/main-297d6a4ae3.css">
+</noscript>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700|Montserrat:600&display=swap" />
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700|Montserrat:600&display=swap"
+    media="print" onload="this.media='all'" />
+
+<div class="grid-container">
+    <div class="grid">
+        <div class="1/1 grid__cell">
+            <div class="grid-sandbox grid-sandbox--tight grid-sandbox--block grid-sandbox--background">
+                <div class="grid grid--middle">
+                    <div class="1/1 grid__cell">
+                        <p class="breadcrumb">
+                            <a class="breadcrumb__link" href="/">Duunitori</a> /
+                            <a class="breadcrumb__link" href="/vaalikone"><span>Vaalikone</span></a> /
+                            <a class="breadcrumb__link" href="/vaalikone/vastaa"><span>Vastaa</span></a>
+                        </p>
+                    </div>
+                    <div class="1/1 grid__cell">
+                        <h1 class="text--heading-4 text--heading-3-desk">Duunitorin vaalikone</h1>
+                        <p class="header__info">
+                            Vastaa kysymyksiin oman tuntemuksesi mukaan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="1/1 grid__cell">
+            <div class="section hidden-on-mobile">
+                <div class="section__item text--small text--body-widescreen section__item--selected js-select-section js-select-section-1"
+                    data-selected-section="1">
+                    <span>Työn arki</span>
+                </div>
+                <div class="section__item text--small text--body-widescreen  js-select-section js-select-section-2"
+                    data-selected-section="2">
+                    <span>Työelämän arvot</span>
+                </div>
+                <div class="section__item text--small text--body-widescreen  js-select-section js-select-section-3"
+                    data-selected-section="3">
+                    <span>Työttömyys ja turva</span>
+                </div>
+                <div class="section__item text--small text--body-widescreen  js-select-section js-select-section-4"
+                    data-selected-section="4">
+                    <span>Työllisyys ja verot</span>
+                </div>
+                <div class="section__item text--small text--body-widescreen  js-select-section js-select-section-5"
+                    data-selected-section="5">
+                    <span>Työelämän rakenteet</span>
+                </div>
+            </div>
+            <form method="post" action="/vaalikone/vastaa">
+                <input type="hidden" name="csrfmiddlewaretoken"
+                    value="x6TtKyCGXehBIcG3UtH8HmBjWixEtH0kRDEHHBEO59sIIzKVbe3OjovG3pROv7DT">
+                <input type="hidden" name="district" value="helsinki" />
+                <div class="grid__cell--margin-top questionnaire-section js-questionnaire-section-1 questionnaire-section--visible"
+                    data-section="1">
+                    <div class="grid-sandbox">
+                        <div class="question__section-heading">
+                            <h3><span class="mark-round mark-round--primary">1</span> Työn arki</h3>
+                        </div>
+                        <div id="kysymys-1" class="question js-question-editable" data-id="1" data-value="None">
+                            <h3 class="question__heading">1. Palkkatietojen avoimuus työpaikoilla on varmistettava
+                                lainsäädännöllä.</h3>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+                        <div id="kysymys-2" class="question js-question-editable" data-id="2" data-value="None">
+                            <h3 class="question__heading">2. Säännöllisen työajan tulisi vuonna 2033 olla enintään 30
+                                tuntia viikossa.</h3>
+                            <p class="question__info">Työaikalakiin kirjattu säännöllinen työaika on tällä hetkellä
+                                enintään 40 tuntia viikossa.</p>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+                        <div id="kysymys-3" class="question js-question-editable" data-id="3" data-value="None">
+                            <h3 class="question__heading">3. Elinkustannusten noustessa myös palkkojen pitää nousta
+                                samassa suhteessa.</h3>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+                        <div id="kysymys-4" class="question js-question-editable" data-id="4" data-value="None">
+                            <h3 class="question__heading">4. Kokopäivätyöstä tulee Suomessa tienata vähintään 2 000
+                                euroa kuukaudessa.</h3>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+                        <div class="btn-group btn-group--space-between questionnaire-section__buttons hidden-on-mobile">
+                            <button href=".section" type="button" name="button"
+                                class="btn btn--disabled js-select js-select-previous ">Edellinen</button>
+                            <button href=".section" type="button" name="button"
+                                class="btn btn--success js-select js-select-next js-scroll-to">Seuraava</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__cell--margin-top questionnaire-section js-questionnaire-section-2 " data-section="2">
+                    <div class="grid-sandbox">
+                        <div class="question__section-heading">
+                            <h3><span class="mark-round mark-round--primary">2</span> Työelämän arvot</h3>
+                        </div>
+                        <div id="kysymys-5" class="question js-question-editable" data-id="5" data-value="None">
+                            <h3 class="question__heading">5. Suomi ei tarvitse tulevaisuudessa lisää ulkomaista
+                                työvoimaa.</h3>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+                        <div id="kysymys-6" class="question js-question-editable" data-id="6" data-value="None">
+                            <h3 class="question__heading">6. Työelämässä toteutuu sukupuolten välinen tasa-arvo.</h3>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+                        <div id="kysymys-7" class="question js-question-editable" data-id="7" data-value="None">
+                            <h3 class="question__heading">7. Päästöjä aiheuttavien tai luonnonvaroja kuluttavien
+                                yritysten verotusta pitää kiristää, vaikka se tarkoittaisi työpaikkojen menettämistä.
+                            </h3>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+                        <div id="kysymys-8" class="question js-question-editable" data-id="8" data-value="None">
+                            <h3 class="question__heading">8. Suomen yleisimmän työkielen on tulevaisuudessakin oltava
+                                suomi.</h3>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+                        <div id="kysymys-9" class="question js-question-editable" data-id="9" data-value="None">
+                            <h3 class="question__heading">9. Hyväksyn suuretkin tuloerot, koska lahjakkaita ja ahkeria
+                                ihmisiä pitää pystyä palkitsemaan.</h3>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+
+                        <div class="btn-group btn-group--space-between questionnaire-section__buttons hidden-on-mobile">
+                            <button href=".section" type="button" name="button"
+                                class="btn btn--secondary  js-select js-select-previous js-scroll-to">Edellinen</button>
+                            <button href=".section" type="button" name="button"
+                                class="btn btn--success js-select js-select-next js-scroll-to">Seuraava</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__cell--margin-top questionnaire-section js-questionnaire-section-3 " data-section="3">
+                    <div class="grid-sandbox">
+                        <div class="question__section-heading">
+                            <h3><span class="mark-round mark-round--primary">3</span> Työttömyys ja turva</h3>
+                        </div>
+                        <div id="kysymys-10" class="question js-question-editable" data-id="10" data-value="None">
+                            <h3 class="question__heading">10. Ansiosidonnaisen päivärahan kestoa on lyhennettävä.</h3>
+                            <p class="question__info">Ansiopäivärahan enimmäiskesto riippuu työhistorian pituudesta ja
+                                iästä ja vaihtelee 300 päivästä 500 päivään.</p>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+                        <div id="kysymys-11" class="question js-question-editable" data-id="11" data-value="None">
+                            <h3 class="question__heading">11. Opintolaina tulee antaa anteeksi, jos muuttaa
+                                työskentelemään harvaan asutulle alueelle.</h3>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+                        <div id="kysymys-12" class="question js-question-editable" data-id="12" data-value="None">
+                            <h3 class="question__heading">12. Päätöksenteolla pitää edistää tulevaisuutta, jossa miehet
+                                ja naiset käyttävät perhevapaita yhtä paljon.</h3>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+                        <div id="kysymys-13" class="question js-question-editable" data-id="13" data-value="None">
+                            <h3 class="question__heading">13. Lainsäädäntöön on kirjattava terapiatakuu, jossa
+                                psykoterapiahoidon tai muun psykososiaalisen hoidon tulee alkaa kuukauden sisällä
+                                tarpeen arvioinnista.</h3>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+                        <div id="kysymys-14" class="question js-question-editable" data-id="14" data-value="None">
+                            <h3 class="question__heading">14. Viimeistään vuonna 2033 Suomessa pitää olla käytössä
+                                perustulo, joka kuuluu kaikille.</h3>
+                            <p class="question__info">Tässä kysymyksessä perustulolla tarkoitetaan sitä, että kaikille
+                                kansalaisille maksetaan vastikkeettomasti rahaa toimeentuloa varten.</p>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+                        <div class="btn-group btn-group--space-between questionnaire-section__buttons hidden-on-mobile">
+                            <button href=".section" type="button" name="button"
+                                class="btn btn--secondary  js-select js-select-previous js-scroll-to">Edellinen</button>
+                            <button href=".section" type="button" name="button"
+                                class="btn btn--success js-select js-select-next js-scroll-to">Seuraava</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__cell--margin-top questionnaire-section js-questionnaire-section-4 " data-section="4">
+                    <div class="grid-sandbox">
+                        <div class="question__section-heading">
+                            <h3><span class="mark-round mark-round--primary">4</span> Työllisyys ja verot</h3>
+                        </div>
+                        <div id="kysymys-15" class="question js-question-editable" data-id="15" data-value="None">
+                            <h3 class="question__heading">15. Työttömyysetuuksien pitää olla nykyistä pienempiä, jotta
+                                työllisyys saadaan pysyvästi korkeammalle tasolle.</h3>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+                        <div id="kysymys-16" class="question js-question-editable" data-id="16" data-value="None">
+                            <h3 class="question__heading">16. Jos valtion kassaan olisi pakko saada lisää rahaa,
+                                valitsisin mieluummin tuloverotuksen kiristämisen kuin työttömyysturvan heikentämisen.
+                            </h3>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+                        <div id="kysymys-17" class="question js-question-editable" data-id="17" data-value="None">
+                            <h3 class="question__heading">17. Työntekijöitä pitäisi pystyä irtisanomaan nykyistä
+                                kevyemmin perustein.</h3>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+                        <div id="kysymys-18" class="question js-question-editable" data-id="18" data-value="None">
+                            <h3 class="question__heading">18. Nykyistä laajempi vapaus sopia palkasta paikallisesti
+                                työnantajan ja työntekijän välillä lisäisi työllisyyttä.</h3>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+                        <div id="kysymys-19" class="question js-question-editable" data-id="19" data-value="None">
+                            <h3 class="question__heading">19. Työn verotusta on alennettava kaikissa tuloluokissa,
+                                vaikka se tarkoittaisi julkisista palveluista karsimista.</h3>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+                        <div class="btn-group btn-group--space-between questionnaire-section__buttons hidden-on-mobile">
+                            <button href=".section" type="button" name="button"
+                                class="btn btn--secondary  js-select js-select-previous js-scroll-to">Edellinen</button>
+                            <button href=".section" type="button" name="button"
+                                class="btn btn--success js-select js-select-next js-scroll-to">Seuraava</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__cell--margin-top questionnaire-section js-questionnaire-section-5 " data-section="5">
+                    <div class="grid-sandbox">
+                        <div class="question__section-heading">
+                            <h3><span class="mark-round mark-round--primary">5</span> Työelämän rakenteet</h3>
+                        </div>
+                        <div id="kysymys-20" class="question js-question-editable" data-id="20" data-value="None">
+                            <h3 class="question__heading">20. Eduskunnan tulee tehdä tarvittaessa sellaisiakin
+                                uudistuksia, joita työmarkkinajärjestöt eivät hyväksy.</h3>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+                        <div id="kysymys-21" class="question js-question-editable" data-id="21" data-value="None">
+                            <h3 class="question__heading">21. Ympäristökysymysten käsittelyä pitää lisätä koulujen
+                                opetussuunnitelmissa.</h3>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+                        <div id="kysymys-22" class="question js-question-editable" data-id="22" data-value="None">
+                            <h3 class="question__heading">22. On oikein, että ruokalähetit eivät saa työskennellä
+                                yrittäjinä alan suuryrityksissä.</h3>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+                        <hr class="grid__divider">
+                        <div id="kysymys-23" class="question js-question-editable" data-id="23" data-value="None">
+                            <h3 class="question__heading">23. Koulutuksesta ei voida leikata ensi vaalikaudella.</h3>
+                            <div class="question__scale">
+                                <span>Täysin eri mieltä</span>
+                                <span>Täysin samaa mieltä</span>
+                            </div>
+                            <div class="question__answers">
+                                <div class="question__answer  js-tooltip" data-value="-2"
+                                    data-tooltip="Täysin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="-1"
+                                    data-tooltip="Jokseenkin eri mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="0" data-tooltip="En osaa sanoa">
+                                </div>
+                                <div class="question__answer  js-tooltip" data-value="1"
+                                    data-tooltip="Jokseenkin samaa mieltä"></div>
+                                <div class="question__answer  js-tooltip" data-value="2"
+                                    data-tooltip="Täysin samaa mieltä"></div>
+                            </div>
+                        </div>
+
+                        <hr class="grid__divider">
+
+                        <div class="btn-group btn-group--space-between questionnaire-section__buttons ">
+                            <button href=".section" type="button" name="button"
+                                class="btn btn--secondary  js-select js-select-previous js-scroll-to hidden-on-mobile">Edellinen</button>
+                            <button type="submit" class="btn btn--success btn-loader">Näytä ehdokkaani</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script type="text/javascript" src="https://skyhood-duunitori5.s3.amazonaws.com/static/web/js/script-dd63fd3309.js"></script>
+        <script type="text/javascript">
+              $script(['https://skyhood-duunitori5.s3.amazonaws.com/static/web/js/jquery.js', 'https://skyhood-duunitori5.s3.amazonaws.com/static/web/js/cookie-853d020db1.js'], "bundle");
+              $script.ready('bundle', function() { $script('https://skyhood-duunitori5.s3.amazonaws.com/static/web/js/gdpr-popup-df7ab997ff.js', 'jquery'); });
+        
+              $script
+                  .ready(["jquery"], function() {
+                    
+                    
+        
+                      $script('https://skyhood-duunitori5.s3.amazonaws.com/static/web/js/main-5ec3d9e9ad.js', function(){
+                        $script('https://skyhood-duunitori5.s3.amazonaws.com/static/web/js/survey-18efde742a.js', 'survey');
+                      });
+        
+        
+                      API_AREA_URL = '/api/v1/areas'
+                      API_SEARCH_URL = '/api/v1/search_autocomplete'
+                      CAT_ICON_SRC = 'https://skyhood-duunitori5.s3.amazonaws.com/static/web/images/ic_list_cat.svg'
+                      COMPANY_ICON_SRC = 'https://skyhood-duunitori5.s3.amazonaws.com/static/web/images/ic_list_company.svg'
+                      COMPANY_GROUP_ICON_SRC = 'https://skyhood-duunitori5.s3.amazonaws.com/static/web/images/ic_list_company-group.svg'
+                      JOB_ICON_SRC = 'https://skyhood-duunitori5.s3.amazonaws.com/static/web/images/ic_list_job.svg'
+                      LOCATION_ICON_SRC = 'https://skyhood-duunitori5.s3.amazonaws.com/static/web/images/ic_location-outline.svg'
+                      KEYWORD_ICON_SRC = 'https://skyhood-duunitori5.s3.amazonaws.com/static/web/images/ic_nicetohave_gray.svg'
+        
+                      $script(['https://skyhood-duunitori5.s3.amazonaws.com/static/web/js/fav-1b5b65abd5.js']);
+        
+                      
+        
+        
+                  });
+          </script>
+        <script>
+            $script.ready(["jquery"], function () {
+                $script('https://skyhood-duunitori5.s3.amazonaws.com/static/web/js/cookie-853d020db1.js', function () {
+                    $script(['https://skyhood-duunitori5.s3.amazonaws.com/static/web/js/duunivaalit-c104ebd98e.js']);
+                });
+            });
+        </script>
