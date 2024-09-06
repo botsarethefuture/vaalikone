@@ -19,7 +19,9 @@ from django.utils.translation import gettext_lazy as _
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-CSRF_TRUSTED_ORIGINS = ["https://botsarefuture-effective-space-goldfish-579gpjgv457cwxj-8000.preview.app.github.dev"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://botsarefuture-effective-space-goldfish-579gpjgv457cwxj-8000.preview.app.github.dev"
+]
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -44,7 +46,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rosetta",
     "parler",
-    "vaalikone_app"
+    "vaalikone_app",
 ]
 
 MIDDLEWARE = [
@@ -59,7 +61,7 @@ MIDDLEWARE = [
 ]
 
 LOCALE_PATHS = [
-    BASE_DIR / 'locale/',
+    BASE_DIR / "locale/",
 ]
 
 ROOT_URLCONF = "vaalikone.urls"
@@ -137,20 +139,26 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
 LANGUAGES = (
-    ('en', _('English')),
-    ('fi', _('Finnish')),
-    ('sv', _('Swedish')),
+    ("en", _("English")),
+    ("fi", _("Finnish")),
+    ("sv", _("Swedish")),
 )
 
 
 PARLER_LANGUAGES = {
     None: (
-        {'code': 'en',}, # English
-        {'code': 'fi',}, # Finnish
-        {'code': 'sv',}, # Swedish
+        {
+            "code": "en",
+        },  # English
+        {
+            "code": "fi",
+        },  # Finnish
+        {
+            "code": "sv",
+        },  # Swedish
     ),
-    'default': {
-        'fallbacks': ['en'],
-        'hide_untranslated': False,
-    }
+    "default": {
+        "fallbacks": ["en"],
+        "hide_untranslated": False,
+    },
 }

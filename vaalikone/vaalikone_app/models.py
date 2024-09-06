@@ -18,5 +18,5 @@ class ElectionCandidate(TranslatableModel):
         FirstName=models.CharField(max_length=30),
         LastName=models.CharField(max_length=30),
         CandidateNumber=models.IntegerField(max_length=50),
-        Party=models.ForeignKey('ElectionParty', on_delete=models.CASCADE)
+        Party=models.ForeignKey("ElectionParty", on_delete=models.CASCADE),
     )
